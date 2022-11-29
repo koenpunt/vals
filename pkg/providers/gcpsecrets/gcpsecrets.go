@@ -13,7 +13,7 @@ import (
 	"gopkg.in/yaml.v3"
 )
 
-// Format: ref+gcpsecrets://project/mykey[?version=VERSION][&fallback=value=valuewhenkeyisnotfound][&optional=true]#/yaml_or_json_key/in/secret
+// Format: ref+gcpsecrets://project/mykey[?version=VERSION][&fallback_value=valuewhenkeyisnotfound][&optional=true]#/yaml_or_json_key/in/secret
 type provider struct {
 	client   *sm.Client
 	ctx      context.Context
